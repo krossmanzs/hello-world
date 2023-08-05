@@ -1,15 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import { Greet } from './components/Greet'; // must be use curly braces if name export
-import { Welcome } from './components/Welcome';
+import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 
 function App() {
   return (
     <div className="App">
-      {/* <Greet/> */}
-      {/* <Welcome/> */}
-      <Hello/>
+      <Greet name="lenoogs" hobby="game" >
+        <p>This is children props</p>
+      </Greet>
+      <Greet name="udin" hobby="awikwok" >
+        <button>Action</button>
+      </Greet>
+      <Greet name="ujang" hobby="kocak" />
+
+      <Welcome name="lenoogs" hobby="game" />
+      <Welcome name="udin" hobby="awikwok" />
+      <Welcome name="ujang" hobby="kocak" />
+      {/* <Hello /> */}
     </div>
   );
 }

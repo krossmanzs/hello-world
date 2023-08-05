@@ -22,7 +22,7 @@ import React, { Component } from 'react'
 
 class Welcome extends Component {
     render() {
-        return <h1>This is Class Component</h1> // JSX
+        return <h1>Welcome {this.props.name} with hobby {this.props.hobby}</h1> // JSX
     }
 }
 
